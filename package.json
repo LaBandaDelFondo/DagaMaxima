@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/LaBandaDelFondo/DagaMaxima#readme",
   "dependencies": {
-    "express": "^4.14.0",
-    "gulp": "^3.9.1",
-    "gulp-nodemon": "^2.1.0",
-    "mongoose": "^4.5.3"
+    "dotenv": "^2.0.0",
+    "hapi": "^13.5.0",
+    "mongoose": "^4.5.3",
+    "nodemon": "^1.9.2"
   }
 }
