@@ -3,17 +3,23 @@ var Hapi = require('hapi');
 var mongoose = require('mongoose');
 
 var server = new Hapi.Server();
- 
-server.connection({ port: process.env.APP_PORT });
+
+server.connection({
+  port: process.env.APP_PORT
+});
 
 var db = mongoose.connect('mongodb://localhost/dagumMaximum');
 
 var plugins = [
-  { register : require('./lib/modules/login/index.js') }
+  {
+    register: require('./lib/modules/login/index.js')
+  }
 ];
- 
-server.register(plugins, function (err) {
-  if (err) { throw err;}
+
+server.register(plugins, function(err) {
+  if (err) {
+    throw err;
+  }
 });
 
 server.start();
