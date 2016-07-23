@@ -11,9 +11,9 @@ server.connection({
 var db = mongoose.connect('mongodb://localhost/dagumMaximum');
 
 var plugins = [
-  {
-    register: require('./lib/modules/login/index.js')
-  }
+  {register: require('./lib/modules/login/index.js')},
+  {register: require('./lib/modules/images/index.js')},
+  {register: require('inert')}
 ];
 
 server.register(plugins, function(err) {
