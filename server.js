@@ -13,7 +13,6 @@ var db = mongoose.connect('mongodb://localhost/dagumMaximum');
 var plugins = [
   { register: require('inert') },
   { register: require('./lib/modules/login/index.js') },
-  { register: require('./lib/modules/image/index.js') },
   { register: require('./lib/modules/publication/index.js') }  
 ];
 
