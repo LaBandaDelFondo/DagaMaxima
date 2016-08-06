@@ -27,5 +27,3 @@ server.register(plugins, function (err) {
 server.start();
 
 console.log('Listening on ' + process.env.APP_PORT);
-rocess.env.APP_PORT);
-rocess.env.APP_PORT);
