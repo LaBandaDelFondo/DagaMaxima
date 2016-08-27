@@ -17,10 +17,12 @@
   },
   "homepage": "https://github.com/LaBandaDelFondo/DagaMaxima#readme",
   "dependencies": {
+    "boom": "^3.2.2",
     "dotenv": "^2.0.0",
     "hapi": "^13.5.0",
     "inert": "^4.0.1",
     "mongoose": "^4.5.3",
-    "nodemon": "^1.9.2"
+    "nodemon": "^1.9.2",
+    "vision": "^4.1.0"
   }
 }
